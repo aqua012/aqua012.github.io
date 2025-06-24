@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/* 全体の基本スタイル */
+html, body {
+    height: 100%; /* ページ全体の高さを確保 */
+    margin: 0; /* 余白をなくす */
+    font-family: 'Noto Sans JP', sans-serif; /* 日本語フォント */
+    text-align: center; /* テキストを中央揃え */
+    background: linear-gradient(135deg, #a2d2ff, #d0f4de); /* 水色系のグラデーション背景 */
+    color: #333; /* 文字の基本色 */
+}
+
+/* フレックスボックスでコンテンツを画面いっぱいに広げる */
+body {
+    display: flex;
+    flex-direction: column; /* 縦方向のレイアウト */
+}
+
+/* ヘッダー部分 */
+header {
+    background: rgba(0, 0, 0, 0.7); /* 半透明の黒背景 */
+    color: white; /* 文字色を白に */
+    padding: 20px; /* 内側の余白 */
+    font-size: 24px; /* 文字の大きさ */
+}
+
+/* メインコンテンツ（中央揃え） */
+main {
+    flex: 1; /* 残りの空間をすべて埋める */
+    display: flex;
+    justify-content: center; /* 水平方向の中央揃え */
+    align-items: center; /* 垂直方向の中央揃え */
+    padding: 20px; /* 上下左右の余白 */
+}
+
+/* プロフィールカードのデザイン */
+.profile {
+    background: white; /* 背景色を白に */
+    padding: 20px; /* 内側の余白 */
+    width: 80%; /* 横幅を80%に */
+    max-width: 400px; /* 最大幅を400pxに */
+    border-radius: 10px; /* 角を丸く */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* 影をつけて立体感を出す */
+    text-align: left; /* テキストを左揃え */
+}
+
+/* プロフィール画像 */
+.profile img {
+    width: 100px; /* 幅100px */
+    height: 100px; /* 高さ100px */
+    border-radius: 50%; /* 円形に */
+    object-fit: cover; /* 画像を適切にトリミング */
+    margin-bottom: 10px; /* 画像下に余白 */
+}
+
+/* セクションタイトル */
+h2 {
+    color: #0077b6; /* 水色系のアクセントカラー */
+    font-size: 20px; /* 文字サイズ */
+    margin-top: 15px; /* 上の余白 */
+}
+
+/* フッター（ページ最下部に固定） */
+footer {
+    background: rgba(0, 0, 0, 0.7); /* 半透明の黒背景 */
+    color: white; /* 文字色を白に */
+    padding: 10px; /* 内側の余白 */
+    text-align: center; /* 中央揃え */
+}
